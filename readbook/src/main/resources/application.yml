@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/views/
+  messages:
+    basename: static/i18n/messages
+
+
+  datasource:
+    url: jdbc:mysql://3.101.117.1:3308/wattpad?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: wattpad_user
+    password: O!C^L4%gw0^@9W*2rZ^ZIi@EwOT0Se
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.best.book.entity
